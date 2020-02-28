@@ -1,12 +1,76 @@
+@charset "UTF‐8";
+
+/* --------  css style för Start sidan -------- */
+
+section {
+    display: inline-block;
+    width: 20%;
+    margin-right: 4%;
+}
+
+.startpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.startpage header,
+.startpage footer {
+    flex: 0 0 100%;
+}
+
+.startpage section {
+    flex: 0 0 22%;
+} 
+
+html {
+    margin: 2%;
+}
+
+h1::first-letter {
+    color: #00AF64
+}
+
+.menu h2 {
+    box-shadow: inset 0 0 20px #007241;
+    border-radius: 50%;
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.menu a:link {
+    text-decoration:none;
+    color: #000;
+}
+.hwrap > a {
+    margin-right: 30px;
+}
+
+.hwrap > h1 {
+    margin-left: 50px;
+    font-size: 5rem;
+    font-family: cursive;
+}
+
+.hwrap {
+    display: flex; /* flex så de visas bredvid varandra */
+    flex-wrap: wrap; /* Radbryt */
+    align-items: center; /* så att elementen läggs centrerat vertikalt */
+}
+
+.startpage .logo {
+    width: 235px;
+    height: 198px;
+} 
 
 body {
-    margin: auto;             /* Centrera sidan */
+    margin: auto;  /* Centrera sidan */
     width: 860px;
     font-family: sans-serif;
     font-size: 100%;
-}
-section, header, footer {
-    outline: 1px solid red;
 }
 
 header {
@@ -15,8 +79,99 @@ header {
 }
 
 .startpage h1 {
-    font-size: 500%;           /* Massiv rubrik */
+    font-size: 500%;     /* Massiv rubrik */
 }
+
+
+/*----------------------------------------------*/
+/*##############################################*/
+/* -------- css style för om-oss sidan -------- */
+
+.subpage .logo {
+    width: 146px;
+    height: 123px;
+}
+
+.subpage h1 {
+    font-size: 2.6rem;
+}
+
+h1 > span {
+    color: #a62f00;
+}
+
+#menuList {
+    display: flex;
+}
+
+#menuList section {
+    margin-left: 33px;
+}
+
+.subpage .hwrap {
+    justify-content: space-between;
+} 
+
+.subpage .hwrap > a,
+nav {
+    flex: 0 1 20%;
+    min-width: 146px;
+    margin-right: 10px;
+}
+
+.subpage .hwrap > h1,
+div[role=main] {
+    flex: 1 1 300px;
+}
+
+.dborder {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+article {
+    padding-bottom: 1em; /* last p element contributes 1em */
+    margin-bottom: 2em;
+    border-bottom: 3px double #00af64;
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+figure {
+    float: left; /* Bilden till vänster om texten */
+    margin: 0; /* Nollställ webbläsarnas inbyggda stil */
+}
+
+figure img {
+    width: 128px;
+    height: 128px;
+}
+
+figcaption {
+    font: italic bolder 110% sans-serif;
+    font-family: inherit; /* Restore after shorthand */
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+}
+
+article p {
+    margin-left: 140px;
+    hyphens: auto;
+}
+
+#navAndmain {
+    display: flex;
+}
+
+
+/*----------------------------------------------*/
+/*##############################################*/
+/* -------- css style för båda sidorna -------- */
+
 
 .tagline {
     font-size: 120%;
@@ -26,24 +181,33 @@ header {
     margin: 1em 0;
 }
 
+
+.menu {
+    margin: 1em 0;
+    padding: 0;
+} 
+
+.menu li {
+    margin: 0 0 1rem;
+    list-style: none;
+}
+
+.menu > li,
+.menu > h2 {
+    margin: 0 0 1rem;
+    list-style: none;
+
+}
+
 .menu > h2 {
     margin: 0 0 1em;
     padding: 2em 0;
     background-color: #f5f5f5;   /* mycket ljus grå*/
     text-align: center;
 }
+
 footer {
     margin-top: 3em;
     text-align: center;
     color: #999;
-}
-.subpage .logo {
-    width: 146px;
-    height: 123px;
-}
-.subpage h1 {
-    font-size: 2.6rem;
-}
-h1 > span {
-    color: #a62f00;
 }
