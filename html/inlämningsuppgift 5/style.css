@@ -1,0 +1,285 @@
+
+header{
+    background-color: #F1F3FFFF;
+    display: flex;
+}
+
+.mainphoto{
+    margin: 10px 0 15px 5%;
+    box-shadow: 0px 10px 20px rgb(197, 14, 14);
+}
+
+.laxphoto {
+    width: 500px;
+    height: 400px;
+    
+}
+
+.ossphoto {
+    width: 500px;
+    height: 500px;
+}
+
+.ex{
+    display: flex;
+}
+
+.eximg{
+    float: right;
+}
+
+h1 {
+    color: #d54d7b; 
+    font-family: "Great Vibes", cursive; 
+    font-size: 4em; 
+    line-height: 160px; 
+    font-weight: normal; 
+    margin: auto;
+    text-shadow: 0 10px 20px rgb(197, 14, 14);
+ }
+
+ h2 {
+    font-family: 'Droid serif', serif; 
+    margin-left: 20px;
+    color: #d54d7b; 
+ }
+
+ #exampleuppg > p {
+    ont-family: 'Droid serif', serif; 
+    margin-left: 20px;
+}
+
+#lärtmigHeader{
+    display: flex;
+ }
+
+#lärtmigHeader > p{
+    margin-left: 20%;
+    margin-top: 30px;
+    font-size: 15px;
+    color: rgb(185, 88, 104); 
+ }
+
+section{
+    display: inline-block;
+    width: 100%;
+    border: 2px ridge pink;
+}
+
+#lartmig{
+    background-color: #F7CED7FF;
+}
+
+#intressanta{
+    background-color: #F1F3FFFF;
+}
+
+#kapitelTabell{
+    background-color: #F7CED7FF;
+}
+
+#exampleuppg{
+    background-color: #F1F3FFFF;
+}
+
+#ex1, #ex2{
+    display: flex;
+}
+
+footer {
+    margin-top: 3em;
+    text-align: center;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Fancy List design --------------- */
+
+.list-type5{
+    width:90%;
+    margin-left: 40px;
+    margin-top: 40px;
+} 
+
+.list-type5 ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+
+.list-type5 ol li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: #F1F3FFFF;
+    padding-left: 58px;
+}
+
+.list-type5 a{
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-type5 li:hover{
+    box-shadow:inset -4em 0 #6CD6CC;
+    -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+}
+
+.list-type5 ol li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #6CD6CC;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+
+
+/* --------------- --------------- --------------- */
+
+
+
+
+.list-type2 {
+    width:90%;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.list-type2 ol{
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin-bottom: 4em;
+}
+
+.list-type2 ol ol{
+    margin: 0 0 0 2em;
+}
+
+.list-type2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #F7CED7FF;
+    color: #444;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.list-type2 li:hover{
+    background: #d54d7b;
+    color:white;
+    text-decoration:none;
+    transform: scale(1.01);
+}
+
+.list-type2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background:#6CD6CC;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    color:#FFF;
+}
+
+
+/* --------------- --------------- --------------- */
+
+
+
+
+
+
+/* --------------- Fancy Table design --------------- */
+#intrkapitel {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#tableList{
+  list-style-type: none;
+  text-align: left;
+  margin-top: 10px;
+}
+
+#intrkapitel td, #intrkapitel th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#intrkapitel tr:nth-child(even){background-color: #f2f2f2;}
+
+#intrkapitel tr:hover {
+    background: #d54d7b;
+    color:white;
+}
+
+#intrkapitel th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #d54d7b;
+  color: white;
+}
+/* --------------- --------------- --------------- */
